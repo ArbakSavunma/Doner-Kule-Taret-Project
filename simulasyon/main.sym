@@ -1,0 +1,45 @@
+010     @SCRATCH
+011     @SCRATCH
+011     _RETURN_
+012     @SCRATCH
+013     @SCRATCH
+014     x
+015     @TRIS_B
+
+ROM Allocation:
+000005  main
+000005  @cinit1
+00000A  @cinit2
+
+Project Directory:
+    C:\Users\makyu\Desktop\ARBAK\TANK\simulasyon\
+
+Project Files:
+    main.c                                                  [31-Tem-23 10:39  CRC=4DD0DE82]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\10F220.h [18-Nis-14 16:55  CRC=085C79F5]
+
+Source signature=5E89D26C
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC10F220
+    Pointer Size:   5
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

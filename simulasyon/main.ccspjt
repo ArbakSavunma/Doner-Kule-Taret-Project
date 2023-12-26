@@ -1,0 +1,20 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC10F220
+CCSVersion=5.025
+Compiler=PCB
+[Target Data]
+FileList=main.c
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+[Units]
+Count=1
+1=main (main)
+
+[ProjectLog]
+Days=1
+D1=31-07-2023
+D1_L=1
+D1_L1=[38915]Project Closed.

@@ -1,0 +1,72 @@
+CCS PCB C Compiler, Version 5.025, 5967               31-Tem-23 10:39
+
+               Filename:   C:\Users\makyu\Desktop\ARBAK\TANK\simulasyon\main.lst
+
+               ROM used:   14 words (5%)
+                           Largest free fragment is 242
+               RAM used:   6 (38%) at main() level
+                           6 (38%) worst case
+               Stack used: 0 locations
+               Stack size: 2
+
+*
+0000:  MOVWF  05
+0001:  GOTO   005
+0002:  NOP
+0003:  MOVWF  05
+0004:  GOTO   005
+.................... #include <10F220.h> 
+.................... //////////// Standard Header file for the PIC10F220 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC10F220 
+....................  
+.................... #list 
+....................  
+.................... #fuses nowdt, mclr 
+.................... #use delay(clock = 4 MHz) 
+.................... int8 x ; 
+.................... void main() 
+0005:  CLRF   04
+0006:  MOVLW  FF
+0007:  MOVWF  15
+0008:  BCF    07.6
+0009:  BCF    07.7
+.................... { 
+....................   output_high(pin_b1); 
+000A:  BCF    15.1
+000B:  MOVF   15,W
+000C:  TRIS   6
+000D:  BSF    06.1
+....................    while(TRUE) 
+....................    { 
+000E:  GOTO   00E
+....................    /* 
+....................      if(input(pin_b0) == 1){ 
+....................        while(input(pin_b0) == 1); 
+....................        delay_ms(50); 
+....................        x++;                 motoru butona  3. basmadan 5. basmaya ve 7. basmadan 
+....................        if(x == 11) x=0;     8. basmaya kadar çalýþtýrýr. 
+....................      } 
+....................      if((x >= 3 && x <= 5) || (x >= 7 && x <= 8)) { 
+....................      output_low(pin_b1); 
+....................      } 
+....................      else{ 
+....................      output_high(pin_b1); 
+....................      } */ 
+....................       
+....................       
+....................    } 
+....................  
+.................... } 
+000F:  SLEEP
+
+Configuration Fuses:
+   Word  1: 0FFB   IOSC8 NOMCPU NOWDT NOPROTECT MCLR
