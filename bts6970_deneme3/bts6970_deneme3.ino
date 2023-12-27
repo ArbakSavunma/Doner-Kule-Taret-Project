@@ -1,3 +1,5 @@
+// Evet gelelim bu koda. Bu kodda ölü bölgeler dışında joystick değerlerine göre delay değerleri belirlenip interrupt ile bu zaman değerleri arasında motor
+//sürücüsüne gönderilecek PWM sinyali arttırılır. Yön değiştirme durumda ise yavaşlatma uygulanır. 
 #define pwmleft 11
 #define pwmright 10
 #define enleft 5

@@ -1,3 +1,5 @@
+// Bu kodda joystickin oynatılma derecesine belli bir raddeye kadar oranlı kontrol edilir (1800<=300 || 722=>990).
+// Bu noktalardan sonra 5 saniyede bir 5 PWM artacak şekilde kontrol edilir.
 #define pwmleft 11
 #define pwmright 10
 #define enleft 5

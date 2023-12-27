@@ -1,4 +1,5 @@
-
+// Bu kodda joystickin ölü bölgesi (1023 analog değerde 300 ile 723 değerler arası orta bölge)  
+//dışında gelen veriye göre birebir oranda hareket ettirilen yönde motorun döndürülmesi amaçlanmıştır.
 #define pwmleft 11
 #define pwmright 10
 #define enleft 5

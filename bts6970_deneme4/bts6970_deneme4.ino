@@ -1,3 +1,6 @@
+// Bu kodda bütün işlevler düzenlenip fonksiyonlara ayrılmıştır. Ve Teknofest Fuarında test edilmiştir. Testler esnasında bazı işlevler pasifleştirilmiştir.
+//Sabit değerler kullanılarak çalışılmıştır. Düzenlenecektir!!!
+
 int pwmleft=11;        //pin tanımlamaları
 int pwmright=10;
 int enleft=5;
